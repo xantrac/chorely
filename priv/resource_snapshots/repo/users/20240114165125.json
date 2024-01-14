@@ -1,0 +1,79 @@
+{
+  "attributes": [
+    {
+      "default": "fragment(\"uuid_generate_v4()\")",
+      "size": null,
+      "type": "uuid",
+      "source": "id",
+      "references": null,
+      "allow_nil?": false,
+      "generated?": false,
+      "primary_key?": true
+    },
+    {
+      "default": "nil",
+      "size": null,
+      "type": "citext",
+      "source": "email",
+      "references": null,
+      "allow_nil?": false,
+      "generated?": false,
+      "primary_key?": false
+    },
+    {
+      "default": "nil",
+      "size": null,
+      "type": "text",
+      "source": "first_name",
+      "references": null,
+      "allow_nil?": false,
+      "generated?": false,
+      "primary_key?": false
+    },
+    {
+      "default": "nil",
+      "size": null,
+      "type": "text",
+      "source": "last_name",
+      "references": null,
+      "allow_nil?": false,
+      "generated?": false,
+      "primary_key?": false
+    },
+    {
+      "default": "nil",
+      "size": null,
+      "type": "text",
+      "source": "hashed_password",
+      "references": null,
+      "allow_nil?": false,
+      "generated?": false,
+      "primary_key?": false
+    }
+  ],
+  "table": "users",
+  "hash": "596397D75E5F325739EAB37126B36328A3BFFA917EAE6B9F46F824129D5EE349",
+  "repo": "Elixir.Chorely.Repo",
+  "schema": null,
+  "identities": [
+    {
+      "name": "unique_email",
+      "keys": [
+        "email"
+      ],
+      "all_tenants?": false,
+      "base_filter": null,
+      "index_name": "users_unique_email_index"
+    }
+  ],
+  "multitenancy": {
+    "global": null,
+    "strategy": null,
+    "attribute": null
+  },
+  "base_filter": null,
+  "check_constraints": [],
+  "custom_indexes": [],
+  "custom_statements": [],
+  "has_create_action": true
+}

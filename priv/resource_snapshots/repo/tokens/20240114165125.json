@@ -1,0 +1,89 @@
+{
+  "attributes": [
+    {
+      "default": "fragment(\"now()\")",
+      "size": null,
+      "type": "utc_datetime_usec",
+      "source": "updated_at",
+      "references": null,
+      "allow_nil?": false,
+      "generated?": false,
+      "primary_key?": false
+    },
+    {
+      "default": "fragment(\"now()\")",
+      "size": null,
+      "type": "utc_datetime_usec",
+      "source": "created_at",
+      "references": null,
+      "allow_nil?": false,
+      "generated?": false,
+      "primary_key?": false
+    },
+    {
+      "default": "nil",
+      "size": null,
+      "type": "map",
+      "source": "extra_data",
+      "references": null,
+      "allow_nil?": true,
+      "generated?": false,
+      "primary_key?": false
+    },
+    {
+      "default": "nil",
+      "size": null,
+      "type": "text",
+      "source": "purpose",
+      "references": null,
+      "allow_nil?": false,
+      "generated?": false,
+      "primary_key?": false
+    },
+    {
+      "default": "nil",
+      "size": null,
+      "type": "utc_datetime",
+      "source": "expires_at",
+      "references": null,
+      "allow_nil?": false,
+      "generated?": false,
+      "primary_key?": false
+    },
+    {
+      "default": "nil",
+      "size": null,
+      "type": "text",
+      "source": "subject",
+      "references": null,
+      "allow_nil?": false,
+      "generated?": false,
+      "primary_key?": false
+    },
+    {
+      "default": "nil",
+      "size": null,
+      "type": "text",
+      "source": "jti",
+      "references": null,
+      "allow_nil?": false,
+      "generated?": false,
+      "primary_key?": true
+    }
+  ],
+  "table": "tokens",
+  "hash": "ECAEF09727932DCB9CAD483A550787D2EC8D6B013CBF2ACE02B43CC12A609C66",
+  "repo": "Elixir.Chorely.Repo",
+  "schema": null,
+  "identities": [],
+  "multitenancy": {
+    "global": null,
+    "strategy": null,
+    "attribute": null
+  },
+  "base_filter": null,
+  "check_constraints": [],
+  "custom_indexes": [],
+  "custom_statements": [],
+  "has_create_action": true
+}

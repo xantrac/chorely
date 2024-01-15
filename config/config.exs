@@ -14,6 +14,15 @@ config :chorely,
   ecto_repos: [Chorely.Repo],
   generators: [timestamp_type: :utc_datetime]
 
+config :chorely, Chorely.Repo,
+  migration_timestamps: [
+    type: :utc_datetime
+  ]
+
+config :chorely, ChorelyWeb.Guardian,
+  issuer: :chorely,
+  secret_key: "DcFTn+C8w8LAOs0otWO5fC74bPMomSQ1BUepY2IW1VChNrN032OrQmAUOXmgKMff"
+
 # Configures the endpoint
 config :chorely, ChorelyWeb.Endpoint,
   url: [host: "localhost"],
@@ -63,7 +72,6 @@ config :logger, :console,
 
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
-config :ash_graphql, :default_managed_relationship_type_name_template, :action_name
 
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.

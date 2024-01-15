@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "@apollo/client": "^3.8.9",
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^2.1.1",
+    "clsx": "^2.1.0",
+    "graphql": "^16.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.3",
+    "react-router-dom": "^6.21.2",
+    "react-toastify": "^10.0.0"
+  }
+}

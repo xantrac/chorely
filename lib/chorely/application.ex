@@ -17,8 +17,7 @@ defmodule Chorely.Application do
       # Start a worker by calling: Chorely.Worker.start_link(arg)
       # {Chorely.Worker, arg},
       # Start to serve requests, typically the last entry
-      ChorelyWeb.Endpoint,
-      {AshAuthentication.Supervisor, otp_app: :chorely}
+      ChorelyWeb.Endpoint
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html

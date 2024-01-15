@@ -32,11 +32,11 @@ defmodule Chorely.MixProject do
   # Type `mix help deps` for examples and options.
   defp deps do
     [
-      {:ash, "~> 2.18.1"},
-      {:ash_authentication, "~> 3.11.15"},
-      {:ash_authentication_phoenix, "~> 1.9"},
-      {:ash_postgres, "~> 1.3"},
-      {:ash_graphql, "~> 0.26.2"},
+      {:absinthe_error_payload, "~> 1.0"},
+      {:bcrypt_elixir, "~> 3.0"},
+      {:absinthe, "~> 1.7"},
+      {:absinthe_plug, "~> 1.5"},
+      {:crudry, "~> 2.4.0"},
       {:phoenix, "~> 1.7.10"},
       {:phoenix_ecto, "~> 4.4"},
       {:ecto_sql, "~> 3.10"},

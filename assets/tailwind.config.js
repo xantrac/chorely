@@ -7,7 +7,7 @@ const path = require("path")
 
 module.exports = {
   content: [
-    "./js/**/*.js",
+    "./js/**/*.(js|jsx|tsx)",
     "../lib/chorely_web.ex",
     "../lib/chorely_web/**/*.*ex"
   ],

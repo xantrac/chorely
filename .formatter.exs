@@ -2,11 +2,7 @@
   import_deps: [
     :ecto,
     :ecto_sql,
-    :phoenix,
-    :ash,
-    :ash_phoenix,
-    :ash_postgres,
-    :ash_authentication
+    :phoenix
   ],
   subdirectories: ["priv/*/migrations"],
   plugins: [Phoenix.LiveView.HTMLFormatter],
